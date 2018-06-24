@@ -44,7 +44,7 @@ HeightMap::HeightMap(ros::NodeHandle node, ros::NodeHandle priv_nh)
   priv_nh.param("full_clouds", full_clouds_, false);
   priv_nh.param("grid_dimensions", grid_dim_, 320);
   priv_nh.param("height_threshold", height_diff_threshold_, 0.25);
-  
+
   ROS_INFO_STREAM("height map parameters: "
                   << grid_dim_ << "x" << grid_dim_ << ", "
                   << m_per_cell_ << "m cells, "
